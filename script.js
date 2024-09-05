@@ -1,12 +1,15 @@
+// Define the Animal class
+class Animal {
     constructor(species) {
-        this._species = species;
+        this._species = species; // Store species in a private variable
     }
 
+    // Getter for species
     get species() {
         return this._species;
     }
 
-
+    // Method to make a sound
     makeSound() {
         console.log(`The ${this.species} makes a sound`);
     }
